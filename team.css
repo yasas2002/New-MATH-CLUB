@@ -1,0 +1,264 @@
+
+   
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
+  }
+  header{
+    --bggradient: linear-gradient(to bottom, #1ce1da,#5983e9);
+  }
+  
+  .imagestyle{
+      background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=707&q=80');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      
+      }
+   .imagestyle .banner{
+          font:'Roboto';
+          font-weight: normal;
+          text-align: center;
+          font-size: 40pt;
+          line-height: 1.06;
+          padding-top: 20px;
+          color: white;
+      }
+      .club-coord{
+         display: block;
+            padding: 30px 5%;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          }
+          .coord {
+           
+            margin: 0 auto;
+          }
+          @media screen and (min-width: 500px) {
+          
+           .banner h2{
+             margin: 0;
+             font-size:1em;
+           }
+            .coord {
+              width: 100%;
+              justify-content: space-between;
+              align-items: center;
+            }
+            .coord img {
+                position: relative;
+                display: inline-block;
+                border-radius: calc(var(--curve) * 1px);
+                overflow: hidden;
+                text-decoration: none;
+               
+            }
+            .coord p {
+              font-size: large;
+              width: 100%;
+              text-align:justify;
+              display: inline-block;
+            }
+          }
+       
+       .coord-img{
+        position: relative;
+        display: block;  
+        border-radius: calc(var(--curve) * 1px);
+        overflow: hidden;
+        text-decoration: none;
+        width: 45%;
+       
+       }
+       .coord-name{
+       display: block;
+       color: white;
+       }
+       p{
+         padding-left: 10px;
+         color: white;
+       }
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: linear-gradient(to left,blue,#CCF381);
+
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 100px;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 85%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+      
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+      
+    background-color: white;
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+    
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    margin-left: 2em;
+    color: #6A515E;
+  }
+  
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: black;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+  #teams .card__overlay{
+  
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;      
+           
+        background-color: var(--surface-color);      
+        transform: translateY(100%);
+        transition: .2s ease-in-out;
+      
+
+  }
+  #teams .card__header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;    
+    background-color: white;
+    transform: translateY(-100%);
+    
+  }
+  #teams .card__title{
+    font-size: 0.8em;
+    margin-left: 1em;
+
+  }
+  h2{
+      color: white;
+      gap: 2rem;
+      margin: 4rem 5vw;
+      padding: 0;
+      text-align: center;
+      font-size: 3em;
+  }
+
+  .titles {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+  social-icons{
+    margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    social-icons{
+      font-size: 50px;
+  
+    margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
